@@ -24,6 +24,7 @@ public class AnaMenu {
                 }
                 case 2:{
                     OgretmenIslemler ogretmenMenu=new OgretmenIslemler();
+                    ogretmenMenu.ogrtMenu();
                 }
             }
         }
