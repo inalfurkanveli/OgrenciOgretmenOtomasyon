@@ -8,7 +8,7 @@ public class OgretmenIslemler implements IIslemler{
     Scanner scanner=new Scanner(System.in);
   static   int sicilNo=1000;
 
-  ArrayList<Ogretmen> ogretmenList=new ArrayList<>();
+ static ArrayList<Ogretmen> ogretmenList=new ArrayList<>();
     void ogrtMenu(){
         System.out.println("   ============= İŞLEMLER =============\n" +
                 "       1-EKLEME\n" +
@@ -62,22 +62,61 @@ public class OgretmenIslemler implements IIslemler{
         String bolum=scanner.next();
         Ogretmen ogretmen=new Ogretmen(ad,sAd,tcNo,yas,bolum,sicilNo++);
         ogretmenList.add(ogretmen);
+        listeleme();
+        ogrtMenu();
 
 
     }
 
     @Override
     public void arama() {
+        System.out.println("Aranacak kişinin TC no sunu giriniz.");
+        String tcNo=scanner.next();
+        int kontrol=0;
+        for (Ogretmen each:ogretmenList
+             ) {
+            if(each.getTcNo().equals(tcNo)){
+                System.out.println(each);
+                kontrol=1;
+            }
+
+
+        }
+        if (kontrol==0){
+            System.out.println(tcNo+" TC No'lu kişi bulunmamaktadır");
+        }
+        ogrtMenu();
 
     }
 
     @Override
     public void listeleme() {
-
+        for (Ogretmen each:ogretmenList
+             ) {
+            System.out.println(each);
+        }
+        ogrtMenu();
     }
 
     @Override
     public void silme() {
+        System.out.print("Silinecek kişinin TC No'sunu giriniz");
+        String tcNo=scanner.next();
+        boolean kontorl=false;
+
+        for (int i = 0; i <ogretmenList.size() ; i++) {
+            if(ogretmenList.get(i).getTcNo().equals(tcNo)){
+                System.out.println("Silinen Kişi :"+ ogretmenList.get(i));
+                ogretmenList.remove(i);
+                kontorl=true;
+                ogrtMenu();
+            }
+        }
+        if (!kontorl){
+            System.out.println(tcNo+ " TC No'lu kişi bulunmamaktadır");
+            ogrtMenu();
+        }
+
 
     }
 }
