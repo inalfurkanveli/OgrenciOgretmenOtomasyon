@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="88c2663b-545a-44bb-b751-1c0de91ba9b4" name="Changes" comment="OgrenciOgretmenOtomasyon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OgrenciOgretmenOtomasyon/Ogrenci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OgrenciOgretmenOtomasyon/Ogrenci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OgrenciOgretmenOtomasyon/Ogrenciİslemler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OgrenciOgretmenOtomasyon/Ogrenciİslemler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OgrenciOgretmenOtomasyon/Ogretmen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OgrenciOgretmenOtomasyon/Ogretmen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OgrenciOgretmenOtomasyon/OgretmenIslemler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OgrenciOgretmenOtomasyon/OgretmenIslemler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
